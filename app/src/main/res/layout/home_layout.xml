@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#BD9FBC">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="锁屏背单词"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/wrong_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/btn_kaung"
+        android:padding="3dp"
+        android:text="错题本"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        tools:ignore="TouchTargetSizeCheck" />
+</RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp">
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/study_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:background="#705E70"
+            android:onClick="study"
+            android:text="复习"
+            android:textColor="#FFFFFF"
+            tools:ignore="Suspicious0dp,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/set_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="#705E70"
+            android:onClick="set"
+            android:text="设置"
+            android:textColor="#FFFFFF"
+            tools:ignore="Suspicious0dp,TouchTargetSizeCheck" />
+    </LinearLayout>
+</RelativeLayout>
